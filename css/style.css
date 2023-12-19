@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;500;700&display=swap");
+
+
 
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    color: inherit;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 :root {
@@ -13,145 +17,139 @@
     --cor4: #BFA575; 
 }
 
-body {
+strong {
+    color: var(--cor4);
+}
 
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(/imgs/background.jpg);
+body {
+    background-image: url(../imgs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* overflow: hidden; */
+    background-position: right;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
-header {
-    height: 20vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.628),rgba(0, 0, 0, 0));
-    padding: 20px;
+
+.main-container{
+    margin: auto;
+    padding: 16px;
+}
+
+.menu {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-header .logo {
-    display: flex;
     align-items: center;
+    padding-top: 30px;
+    padding-inline: 10px;
+    margin-bottom: 50px;
+    gap: 2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.628),rgba(0, 0, 0, 0));
+    font-family: Roboto, arial;
 }
 
-header div img {
-    width: 150px;
-    margin: 40px 40px 0;
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    margin-top: 20px;
+    transition: 0.5s;
+} 
+
+#logo {
+    width: 10%;
 }
 
-
-.top-main {
+.sec-01 {
     display: flex;
     margin: auto;
-    margin-top: 50px;
-    padding: 50px;
-    padding-bottom: 0px;
-    align-items: center;
+    max-width: 1200px;
+    border-radius: 15px;
+    color: var(--cor3);
+
     background-color: rgba(255, 255, 255, 0.074);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    justify-content: center;
-    max-width: 60rem;   
+    /* -webkit-backdrop-filter: blur(15px); */
+    backdrop-filter: blur(15px);
 }
 
+.sec-01 h2 {color: #BFA575;}
 
-main .container-root {
+.wrap-sec01{
+    display: flex;
+
+}
+
+.sec01-text {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    margin-top: 0;
+    padding: 50px;
 }
 
-main .intro-text {
-    color: var(--cor3);
-    line-height: 2rem;
-}
-
-main .intro-text h2 {
-    color: var(--cor4);
-}   
-
-main .intro-video video {
-    margin: 30px;
-    border-radius: 8px;
-}
-
-main .intro-video {
+.sec01-photo{
     display: flex;
+    align-items: flex-end;
+    padding-right: 20px;
 }
 
-main .intro-photo img {
-    margin-bottom: -72px;
-}
-
-#solucoes {
-    display: block;
-    text-align: center;
-    margin: 20px;
-    margin-top: 10rem;
-    color: var(--cor4);
-}
-
-.mid-main {
+.sec01-video{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-.mid-main h2 {
-    color: var(--cor1);
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.mid-main li {
-    padding: 10px;
     
 }
 
+.sec01-video video{
+    margin: 30px;
+    border-radius: 8px;
+    width: 60%;
+    overflow: hidden;
+}
 
-footer {
+.sec-02 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--cor1);
-    color: #e8e8e8;
-    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1200px;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.074);
+    /* -webkit-backdrop-filter: blur(15px); */
+    backdrop-filter: blur(15px);
+
 }
 
-
-footer .footer-01, .footer-02,.footer-03 {
-   padding: 30px;
-   justify-content: center;
-   align-items: center;
-}
-
-footer .footer-01 img{
-    width: 15rem;
-}
-
-footer .footer-02{
-    line-height: 3rem;
-}
-
-footer .footer-02 img {
-    width: 40px;
-    padding: 10px;
-}
-
-
-footer .footer-03 {
-    line-height: 4rem;
-}
-
-footer .footer-03 a {
-    display: block;
+#title-solucoes {
     color: var(--cor4);
-    font-size: 1.3rem;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+.content-sec02 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+@media (max-width: 780px) {
+    
+    #logo {
+        width: 20%;
+    }
+    
+    .sec-01 {
+        margin-inline: 50px;
+    }
+
+    .sec01-photo{
+        display: none;
+    }
+    
+    
+    .sec01-video video{
+        width: 100%;
+        margin: 0;
+        margin-top: 40px;
+    }
+
 }
