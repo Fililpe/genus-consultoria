@@ -117,6 +117,54 @@ body {
 
 }
 
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cor1);
+    color: #e8e8e8;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+footer .footer-01, .footer-02,.footer-03 {
+   padding: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .footer-01 img{
+    width: 15rem;
+}
+
+footer .footer-02{
+    line-height: 3rem;
+}
+
+footer .footer-02 img {
+    width: 40px;
+    padding: 10px;
+}
+
+
+footer .footer-03 {
+    line-height: 4rem;
+}
+
+footer .footer-03 a {
+    display: block;
+    color: var(--cor4);
+    font-size: 1.3rem;
+}
+
+
+
 #title-solucoes {
     color: var(--cor4);
     padding: 20px;
