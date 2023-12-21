@@ -102,12 +102,12 @@ body {
     overflow: hidden;
 }
 
-.sec-02 {
+.sec-02, .sec-03, .sec-04 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
     max-width: 1200px;
     padding: 16px;
     border-radius: 15px;
@@ -117,40 +117,80 @@ body {
 
 }
 
-#title-solucoes {
+#title-solucoes, #title-depoimentos, #title-clientes {
     color: var(--cor4);
     padding: 20px;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .content-sec02 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.8rem;
+
+    padding-bottom: 16px;
 }
 
-.custom-shape-divider-bottom-1703111550 {
+.content-sec03 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+
+}
+
+.depoimento p {
+    color: rgb(181, 181, 181);
+    font-family: Roboto, Arial;
+    padding-left: 8px;
+}
+
+#video-depoimento {
+    max-width: 350px;
+    margin-block: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content-sec04 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+
+}
+
+#img-cliente{
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+
+/* divisor */
+.custom-shape-divider-bottom-1703194337 {
     position: relative;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-
-    padding-top: 60px;
+    transform: rotate(180deg);
 }
-
-.custom-shape-divider-bottom-1703111550 svg {
+.custom-shape-divider-bottom-1703194337 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 80px;
+    height: 100px;
 }
-
-.custom-shape-divider-bottom-1703111550 .shape-fill {
-    fill: var(--cor1);
+.custom-shape-divider-bottom-1703194337 .shape-fill {
+    fill: var(--cor1);  
 }
+/* divisor */
 
 .footer-content {
     display: flex;
@@ -205,8 +245,23 @@ body {
 
 @media (max-width: 780px) {
     
+    .nav{
+        flex-wrap: wrap;
+        width: 350px;
+        overflow: hidden;
+        gap: 0px;
+        font-size: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
     #logo {
-        width: 20%;
+        width: 30%;
+        align-items:center ;
     }
     
     .sec01-photo{
@@ -220,11 +275,14 @@ body {
         margin-top: 40px;
     }
 
+    #video-depoimento {
+        max-width: 100%;
+    }
+
     .footer-content {
         flex-direction: column-reverse;
         align-items:center ;
         text-align: center;
-        
         gap: 3rem;
     }
 
