@@ -247,6 +247,17 @@ body {
     
     .nav{
         flex-wrap: wrap;
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* width: 350px; */
+        /* overflow: hidden; */
+        /* gap: 0px; */
+        /* font-size: 10px; */
+    }
+    
+    .nav-fixed{
+        flex-wrap: wrap;
+        flex-direction: row;
         width: 350px;
         overflow: hidden;
         gap: 0px;
