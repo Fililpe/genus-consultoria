@@ -3,12 +3,12 @@
   flex-direction: column;
   isolation: isolate;
   position: relative;
-  max-width: 1000px;
-  height: auto;
+  max-width: 650px;
+  max-height: auto;
   background: #29292c;
   border-radius: 1rem;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1rem;
   --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
   --color: #32a6ff;
 }
@@ -69,7 +69,7 @@
 
 .notibody li {
     padding-block: 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--cor3);
 }
 
