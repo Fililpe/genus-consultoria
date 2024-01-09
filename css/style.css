@@ -32,7 +32,6 @@ body {
 
 .main-container{
     margin: auto;
-    padding: 16px;
 }
 
 .menu {
@@ -41,7 +40,7 @@ body {
     align-items: center;
     padding-top: 30px;
     padding-inline: 10px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     gap: 2rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.628),rgba(0, 0, 0, 0));
     font-family: Roboto, arial;
@@ -67,56 +66,70 @@ body {
     width: 10%;
 }
 
-.sec-01 {
-    display: flex;
-    margin: auto;
-    max-width: 1200px;
-    border-radius: 15px;
-    color: var(--cor3);
+header {
+    background-color: var(--cor1);  
 
-    background-color: rgba(255, 255, 255, 0.074);
-    /* -webkit-backdrop-filter: blur(15px); */
-    backdrop-filter: blur(15px);
+    /* background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(15px); */
+
 }
 
-.sec-01 h2 {color: var(--cor4);}
-
-.wrap-sec01{
+.sec-01 {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px; 
+    padding: 70px 70px 70px 100px;
+    gap: 0.5rem;
+    color: var(--cor3);
+
+    background-color: var(--cor1);  
+
+    /* background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(15px); */
 
 }
 
 .sec01-text {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-
-    gap: 0.5rem;
+    max-width: 60%;
+    margin: auto;
 }
 
-.sec01-text p {
+.sec01-text h1, .sec01-text h2{
+    padding: 5px 5px 5px 0px;
+}
+
+.sec01-buttons {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.sec01-buttons button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--cor3);
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor3);
+    padding: 15px 40px;
+    transition: .2s;;
+    margin-right: 50px;
+}
+
+.sec01-buttons button:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    transform: scale(1.1);
+}
+
+.sec-01 h2 {color: var(--cor4);}
+
+.sec-01 p {
     font-size: 18px;
 }
 
-.sec01-photo{
-    display: flex;
-    align-items: flex-end;
-    padding-right: 20px;
-}
 
-.sec01-video{
-    display: flex;
-    
-}
-
-.sec01-video video{
-    margin: 30px;
-    border-radius: 8px;
-    width: 60%;
-    overflow: hidden;
-}
-
-.sec-02, .sec-03, .sec-04 {
+.sec-trabalho, .sec-solucoes, .sec-depoimentos, .sec-clientes {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -132,14 +145,34 @@ body {
 
 }
 
-#title-solucoes, #title-depoimentos, #title-clientes {
+#title-trabalho, #title-solucoes, #title-depoimentos, #title-clientes {
     color: var(--cor4);
     margin-block: 50px;
     font-size: 2.5rem;
     text-align: center;
 }
 
-.content-sec02 {
+.sec-trabalho {
+    align-items: center;
+    color: var(--cor3);
+    padding: 50px;
+}
+
+.sec-trabalho p{
+    font-size: 1.5rem;
+}
+
+.image-trabalho {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#plano {
+    max-width: 100%;
+}
+
+.content-solucoes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -148,7 +181,7 @@ body {
     padding-bottom: 16px;
 }
 
-.content-sec03 {
+.content-depoimentos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -171,7 +204,7 @@ body {
     overflow: hidden;
 }
 
-.content-sec04 {
+.content-clientes {
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
@@ -322,16 +355,6 @@ body {
         align-items:center ;
     }
     
-    .sec01-photo{
-        display: none;
-    }
-    
-    
-    .sec01-video video{
-        width: 100%;
-        margin: 0;
-        margin-top: 40px;
-    }
 
     #video-depoimento {
         max-width: 100%;
