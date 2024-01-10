@@ -67,10 +67,10 @@ body {
 }
 
 header {
-    background-color: var(--cor1);  
+    /* background-color: var(--cor1);   */
 
-    /* background-color: rgba(255, 255, 255, 0.074);
-    backdrop-filter: blur(15px); */
+    background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(15px);
 
 }
 
@@ -78,16 +78,13 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 0px 0px 15px 15px; 
+    border-radius: 0px 0px 15px 15px;
     padding: 70px 70px 70px 100px;
     gap: 0.5rem;
     color: var(--cor3);
-
-    background-color: var(--cor1);  
-
-    /* background-color: rgba(255, 255, 255, 0.074);
-    backdrop-filter: blur(15px); */
-
+    /* background-color: var(--cor1);   */
+    background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(15px);
 }
 
 .sec01-text {
@@ -108,12 +105,13 @@ header {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid var(--cor3);
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: rem;
     font-weight: 700;
     color: var(--cor3);
     padding: 15px 40px;
-    transition: .2s;;
+    transition: .2s;
     margin-right: 50px;
+    margin-bottom: 15px;
 }
 
 .sec01-buttons button:hover{
@@ -147,25 +145,26 @@ header {
 
 #title-trabalho, #title-solucoes, #title-depoimentos, #title-clientes {
     color: var(--cor4);
-    margin-block: 50px;
-    font-size: 2.5rem;
+    margin-block: 3%;
+    font-size: 2.3rem;
     text-align: center;
 }
 
 .sec-trabalho {
     align-items: center;
     color: var(--cor3);
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .sec-trabalho p{
     font-size: 1.5rem;
+    text-align: center;
+    max-width: 50%;
 }
 
-.image-trabalho {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
+.sec-trabalho h2 {
+    color: var(--cor4);
+    margin-bottom: 30px;
 }
 
 #plano {
@@ -355,11 +354,44 @@ header {
         align-items:center ;
     }
     
-
-    #video-depoimento {
-        max-width: 100%;
+    .sec-01 {
+        padding: 26px;
+        padding-top: 50px;
     }
 
+    .sec01-text p {
+        font-size: 0.7rem;
+    }
+
+    .sec01-text{
+        max-width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .sec01-buttons button {
+        padding: 12px;
+    }
+
+    .sec01-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec-trabalho p{
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    #title-trabalho, #title-solucoes{
+        font-size: 1.6rem;
+    }
+    .sec-trabalho h2 {
+        font-size: 0.9rem;
+        text-align: center;
+    }   
+        
+    
     .footer-content {
         flex-direction: column-reverse;
         align-items:center ;
