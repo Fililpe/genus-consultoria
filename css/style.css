@@ -80,7 +80,7 @@ header {
   flex-direction: column;
   width: 100%;
   border-radius: 0px 0px 15px 15px;
-  padding: 70px 70px 70px 100px;
+  padding: 70px 70px 70px 70px;
   gap: 0.5rem;
   color: var(--cor3);
   /* background-color: var(--cor1);   */
@@ -414,8 +414,8 @@ header {
   }
 
   .sec-01 {
-    padding: 26px;
-    padding-top: 50px;
+    padding-inline: 26px;
+    padding-block: 50px;
   }
 
   .sec01-text p {
