@@ -17,7 +17,7 @@
 
 header {
   height: 100vh;
-  background-color: #0a1d3080;
+  background-color: #000000bd;
 }
 
 strong {
@@ -435,6 +435,11 @@ body {
 }
 
 @media (max-width: 740px) {
+
+  header {
+    height: 58%;
+  }
+
   .nav {
     flex-wrap: wrap;
     /* justify-content: center; */
