@@ -224,7 +224,7 @@ body {
 }
 
 .linha-credito img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 16px;
 }
 
@@ -300,18 +300,15 @@ body {
 
 .content-depoimentos {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   gap: 2rem;
   padding: 20px;
-  flex-direction: column;
   align-items: center;
-  font-family: Roboto, Arial;
   color: var(--cor3);
 }
 
 .depoimento {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -327,7 +324,6 @@ body {
 .sobre {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
   padding: 40px;
   gap: 1rem;
 }
@@ -341,7 +337,7 @@ body {
   padding: 20px;
 }
 
-#img-cliente {
+.img-cliente {
   max-width: 200px;
   border-radius: 8px;
 }
