@@ -195,8 +195,10 @@ body {
 }
 
 .sec-trabalho {
+  display: flex;
   align-items: center;
   color: var(--cor3);
+
   /* padding: 50px; */
 }
 
@@ -212,7 +214,7 @@ body {
 }
 
 #plano {
-  max-width: 100%;
+  max-width: 75%;
 }
 
 .linha-credito {
