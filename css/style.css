@@ -183,7 +183,8 @@ body {
 #title-trabalho,
 #title-solucoes,
 #title-depoimentos,
-#title-clientes {
+#title-clientes,
+#title-financeira {
   color: var(--cor4);
   margin-block: 3%;
   font-size: 2.3rem;
@@ -219,19 +220,16 @@ body {
 
 .linha-credito {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 50px;
 }
 
 .linha-credito img {
-  max-width: 80%;
+  max-width: 400px;
   border-radius: 16px;
-}
-
-.linha-credito-mobile {
-  display: none;
 }
 
 .solucoes-container {
@@ -302,6 +300,7 @@ body {
 
 .content-depoimentos {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   padding: 20px;
   align-items: center;
@@ -516,24 +515,16 @@ body {
     font-size: 1.6rem;
   }
 
+  #title-solucoes {
+    margin-bottom: 50px;
+  }
   .sec-trabalho h2 {
     font-size: 0.9rem;
     text-align: center;
   }
 
   .linha-credito img {
-    display: none;
-  }
-
-  .linha-credito-mobile {
-    display: block;
-    margin-bottom: 50px;
-  }
-
-  .linha-credito-mobile img {
-    border-radius: 16px;
     width: 100%;
-    margin-block: 1rem;
   }
 
   .depoimento {
@@ -582,5 +573,9 @@ body {
   .solucoes-container {
     flex-wrap: nowrap;
     max-height: 100%;
+  }
+
+  .content-depoimentos {
+    flex-wrap: wrap;
   }
 }
