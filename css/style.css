@@ -215,7 +215,7 @@ body {
 }
 
 #plano {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .linha-credito {
@@ -505,6 +505,10 @@ body {
     max-width: 100%;
     font-size: 1rem;
   }
+    
+  #plano {
+    max-width: 100%;
+  }
 
   .solucoes-content {
     max-width: 300px;
@@ -578,4 +582,5 @@ body {
   .content-depoimentos {
     flex-wrap: wrap;
   }
+
 }
