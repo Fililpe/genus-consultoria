@@ -298,7 +298,7 @@ body {
 .content-depoimentos {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 6rem;
   padding: 20px;
   align-items: center;
   color: var(--cor3);
